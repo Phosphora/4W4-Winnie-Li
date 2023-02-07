@@ -1,10 +1,9 @@
-# Laboratoire #1
+# Exercice #1
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
-#### Objectifs
-* Installer Wordpress localement
-* Réaliser une première version d'un thème
+#### Objectif
+* Produire un thème simple
 
 #### Liens de référence
 - Site du prof sur **siteground**
