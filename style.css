@@ -373,8 +373,16 @@ p {
 }
 
 /* --------------------------------------------- composant */
+.site_entete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lavender;
+}
+
 .site_titre {
   text-decoration: none;
+  padding: 20px;
 }
 
 .site_titre h1 {
@@ -382,6 +390,9 @@ p {
 }
 
 /* menu_entete */
+.menu_entete {
+  background-color: azure;
+}
 .menu_entete .menu {
   display: flex;
   list-style-type: none;
@@ -389,4 +400,5 @@ p {
 }
 .menu_entete .menu .menu-item a {
   padding: 3px 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
