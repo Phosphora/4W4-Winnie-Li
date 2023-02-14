@@ -2,14 +2,13 @@
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
-#### Objectif
-* Produire un thème simple
+#### Objectifs
+- Améliorer la page d'accueil avec les flexbox
+- Réaliser la formatage des articles markdown
 
 #### Liens de référence
-- Site du prof sur **siteground**
-    - https://eddytuto.sg-host.com/
-- Github **eddytuto**    
-- https://github.com/eddytuto
+- Site sur le serveur Web distant **siteground**
+    - https://cidweb34.sg-host.com/
 - https://fr.wordpress.org/
 - Pour visualise sur VC installer, « Markdown preview »
 - Pour activer, `ctrl-shift-v`
