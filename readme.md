@@ -1,4 +1,4 @@
-# Exercice #1
+# Laboratoire #3
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
