@@ -9,12 +9,14 @@
 </head>
 <body>
     <header class="site_entete">
-        <?php the_custom_logo(); ?>
+        <section class="entete_nav">
+            <?php the_custom_logo(); ?>
+            <?php wp_nav_menu( array(
+                "menu" => "entete",
+                "container" => "nav",
+                "container_class" => "menu_entete"
+            ) ); ?>
+        </section>
         <h1><a class="site_titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2><?= bloginfo('description'); ?></h2>
-        <?php wp_nav_menu( array(
-            "menu" => "entete",
-            "container" => "nav",
-            "container_class" => "menu_entete"
-        ) ); ?>
+        <h2 class="site_description"><?= bloginfo('description'); ?></h2>
     </header>

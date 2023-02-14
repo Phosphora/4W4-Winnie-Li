@@ -1,0 +1,21 @@
+ul,
+ol {}
+
+ul, li,
+ol li {}
+
+li > ol {}
+
+li > ul {}
+
+pre {
+    background-color: #555;
+    color: #eee;
+    overflow: scroll;
+}
+
+code {}
+
+strong {}
+
+hr {}

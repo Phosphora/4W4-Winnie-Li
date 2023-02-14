@@ -1,14 +1,22 @@
 .site_entete {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: lavender;
+}
+
+.entete_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site_titre {
     text-decoration: none;
     padding: 20px;
+
+    a {
+        text-decoration: none;
+    }
 }
+
 .site_titre h1 {
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
 }

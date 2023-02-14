@@ -19,9 +19,11 @@ Text Domain: 4W4-Winnie-Li
 
 /* --------------------------------------------- base */
 @import "base/heading";
+@import "base/markdown";
 // @import "base/espacement";
 // @import "base/lien";
 // @import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
+@import "composant/blocflex";
