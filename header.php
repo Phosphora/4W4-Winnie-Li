@@ -16,6 +16,7 @@
                 "container" => "nav",
                 "container_class" => "menu_entete"
             ) ); ?>
+            <?= get_search_form() ?>
         </section>
         <h1><a class="site_titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site_description"><?= bloginfo('description'); ?></h2>
