@@ -16,7 +16,10 @@ ol {
     }
 }
 
-ul {}
+ul {
+    background-color: mistyrose;
+    border-radius: 25px;
+}
 
 ul li,
 ol li {
@@ -51,8 +54,15 @@ code {
     color: #a4e1eb;
 }
 
-strong {}
+strong {
+    color: red;
+}
 
-hr {}
+hr {
+    height: 2px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+}
 
 blockquote {}

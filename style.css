@@ -394,6 +394,11 @@ ol {
   }
 }
 
+ul {
+  background-color: mistyrose;
+  border-radius: 25px;
+}
+
 ul li,
 ol li {
   margin: 0.5rem 0rem;
@@ -426,6 +431,17 @@ code {
   color: #a4e1eb;
 }
 
+strong {
+  color: red;
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
 /* --------------------------------------------- composant */
 .site_entete {
   background-color: lavender;
@@ -452,6 +468,7 @@ code {
 /* menu_entete */
 .menu_entete {
   background-color: azure;
+  border-radius: 25px;
 }
 .menu_entete .menu {
   display: flex;
