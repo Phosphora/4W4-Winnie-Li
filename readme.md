@@ -1,15 +1,15 @@
-# Laboratoire #3
+# Travail Pratique #1
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
 #### Objectifs
-- Améliorer la page d'accueil avec les flexbox
-- Réaliser la formatage des articles markdown
+- Continuer de faire progresser le thème
+- Déployer le projet sur le serveur **_Siteground_**
 
 #### Liens de référence
-- Site sur le serveur Web distant **siteground**
+- Site sur le serveur Web distant **Siteground**
     - https://cidweb34.sg-host.com/
 - https://fr.wordpress.org/
-- Pour visualise sur VC installer, « Markdown preview »
+- Pour visualiser sur VC installer, « Markdown preview »
 - Pour activer, `ctrl-shift-v`
 - https://developer.wordpress.org/themes/basics/
