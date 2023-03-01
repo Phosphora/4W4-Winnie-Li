@@ -14,7 +14,7 @@
       $category = get_queried_object();
       // Permet de définir la nouvelle requête
       $args = array(
-         'category_name' => $category->slug,
+         'category_name' => $category -> slug,
          'orderby' => 'title',
          'order' => 'ASC'
       );
@@ -22,10 +22,18 @@
       $query = new WP_Query( $args );
       // Tout le reste de l'extraction de données est basée
       // sur la nouvelle requête contenue dans $query.
-      if ( $query->have_posts() ) :
-         while ( $query->have_posts() ) : $query->the_post(); ?>
+      if ( $query -> have_posts() ) :
+         while ( $query->have_posts() ) : $query -> the_post();
+         $titre = get_the_title();
+         if ($category -> slug == "cours") {
+            $sigle = substr($titre, 0, 7);
+            $titre_long = substr($titre, 7, -7);
+            $duree = "90";
+            $titre = $titre_long;
+         }
+         ?>
             <article>
-               <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
+               <h2><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h2>
                <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
             </article>
          <?php endwhile; ?>
