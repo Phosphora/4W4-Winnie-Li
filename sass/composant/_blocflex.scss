@@ -2,11 +2,15 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
 
-    article {
-        flex: 1 0 250px;
-        padding: 5px;
-        margin: 10px;
-        border: 1px solid #aaa;
-    }
+.blocflex__article {
+    flex: 1 0 250px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #aaa;
+}
+
+.blocflex__galerie {
+    flex: 1 0 100%;
 }

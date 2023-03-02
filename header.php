@@ -30,7 +30,8 @@
     } else {
         $menu = "note-de-cours-4w4";
     }
-    $menu = $category -> slug;
+    // $menu peut prendre les valeurs suivantes: "note-de-cours-4w4" ou "cours".
+    echo $menu;
     wp_nav_menu( array(
         "menu" => $menu,
         "container" => "nav"
