@@ -10,7 +10,7 @@
 
 .site__main {
     grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    overflow: hidden;
     background-color: rgb(191, 232, 255);
 }
 
@@ -43,5 +43,20 @@
           "aside main"
           "aside main"
           "footer footer";
+    }
+}
+
+.no-aside {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: auto;
+        grid-template-areas:
+          "header"
+          "main"
+          "footer";
     }
 }

@@ -7,7 +7,7 @@
     <title>Mon 4W4</title>
     <?php wp_head(); ?>
 </head>
-<body class="site">
+<body class="site <?php echo(is_front_page() ? "no-aside" : "") ?>">
     <header class="site__entete">
         <section class="entete_nav">
             <?php the_custom_logo(); ?>
@@ -21,19 +21,9 @@
         <h1><a class="site_titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site_description"><?= bloginfo('description'); ?></h2>
     </header>
-<aside class="site__aside">
-    <h3>Menu secondaire</h3>
+
     <?php
-    $category = get_queried_object();
-    if (isset($category)) {
-        $menu = $category -> slug;
-    } else {
-        $menu = "note-de-cours-4w4";
+    if (!is_front_page()) {
+        get_template_part("template-parts/aside");
     }
-    // $menu peut prendre les valeurs suivantes: "note-de-cours-4w4" ou "cours".
-    echo $menu;
-    wp_nav_menu( array(
-        "menu" => $menu,
-        "container" => "nav"
-    ) ); ?>
-</aside>
+    ?>
