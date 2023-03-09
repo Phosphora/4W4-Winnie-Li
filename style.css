@@ -443,39 +443,60 @@ hr {
 }
 
 /* --------------------------------------------- composant */
-.entete_nav {
+.entete__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.site_titre {
+.site__titre {
+  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
   text-decoration: none;
-  padding: 20px;
 }
-.site_titre a {
+.site__titre a {
   text-decoration: none;
 }
 
-.site_titre h1 {
-  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+.menu__recherche {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /* menu_entete */
-.menu_entete {
+.menu__entete {
   background-color: azure;
   border-radius: 25px;
 }
-.menu_entete .menu {
+.menu__entete .menu {
   display: flex;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  flex-direction: column;
   list-style-type: none;
   justify-content: flex-end;
 }
-.menu_entete .menu .menu-item a {
+@media screen and (min-width: 500px) {
+  .menu__entete .menu {
+    position: static;
+    top: auto;
+    right: auto;
+    flex-direction: row;
+    transform: translateX(0);
+  }
+}
+.menu__entete .menu .menu-item a {
   padding: 3px 5px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.menu_entete .menu .menu-item .menu-item::before {
+.menu__entete .menu .menu-item::before {
   content: "";
   background: transparent;
   border-radius: 0;
@@ -498,6 +519,13 @@ hr {
 
 .blocflex__galerie {
   flex: 1 0 100%;
+}
+
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 3rem;
 }
 
 /* --------------------------------------------- layout */
@@ -535,7 +563,7 @@ hr {
 @media screen and (min-width: 1000px) {
   .site {
     grid-template-columns: 20% auto;
-    grid-template-areas: "header header" "aside main" "aside main" "footer footer";
+    grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
 

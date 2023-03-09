@@ -36,11 +36,10 @@
     // row-gap: 50px;
     background-color: rgb(144, 177, 218);
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $largeur__bureau) {
         grid-template-columns: 20% auto;
         grid-template-areas:
           "header header"
-          "aside main"
           "aside main"
           "footer footer";
     }
@@ -52,7 +51,7 @@
       "main"
       "footer";
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $largeur__bureau) {
         grid-template-columns: auto;
         grid-template-areas:
           "header"

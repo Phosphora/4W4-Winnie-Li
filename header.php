@@ -9,17 +9,19 @@
 </head>
 <body class="site <?php echo(is_front_page() ? "no-aside" : "") ?>">
     <header class="site__entete">
-        <section class="entete_nav">
-            <?php the_custom_logo(); ?>
+        <section class="entete__nav">
+        <?php the_custom_logo(); ?>
+        <div class="menu__recherche">
             <?php wp_nav_menu( array(
                 "menu" => "entete",
                 "container" => "nav",
-                "container_class" => "menu_entete"
+                "container_class" => "menu__entete"
             ) ); ?>
             <?= get_search_form() ?>
+        </div>
         </section>
-        <h1><a class="site_titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2 class="site_description"><?= bloginfo('description'); ?></h2>
+        <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
+        <h2 class="site__description"><?= bloginfo('description'); ?></h2>
     </header>
 
     <?php
