@@ -451,7 +451,7 @@ hr {
 
 .site__titre {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
 }
 .site__titre a {
   text-decoration: none;
@@ -466,35 +466,44 @@ hr {
   .menu__recherche {
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
   }
 }
 
-/* menu_entete */
+/* menu__entete */
 .menu__entete {
   background-color: azure;
   border-radius: 25px;
-}
-.menu__entete .menu {
-  display: flex;
+  /*
   position: absolute;
-  top: 3rem;
+  top: 100px;
   right: 0;
-  flex-direction: column;
-  list-style-type: none;
-  justify-content: flex-end;
+  */
+  transform: translateX(300px);
+  transition: transform 0.5s;
 }
-@media screen and (min-width: 500px) {
-  .menu__entete .menu {
-    position: static;
-    top: auto;
-    right: auto;
-    flex-direction: row;
+@media screen and (min-width: 800px) {
+  .menu__entete {
     transform: translateX(0);
   }
 }
+.menu__entete .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style-type: none;
+}
+@media screen and (min-width: 800px) {
+  .menu__entete .menu {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .menu__entete .menu .menu-item a {
+  display: block;
   padding: 3px 5px;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 .menu__entete .menu .menu-item::before {
   content: "";
@@ -502,6 +511,41 @@ hr {
   border-radius: 0;
   padding-inline: 0;
   margin-inline-end: 0;
+}
+
+/* Pour annuler le pseude element ::before ... */
+.menu .menu-item::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+  width: 0;
+  height: 0;
+}
+
+ul li li::before {
+  background: transparent;
+  content: "";
+}
+
+/* bouton burger */
+.burger {
+  border: 1px solid #aaa;
+  display: block;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+}
+
+#chkBurger:checked ~ .menu__entete {
+  transform: translateX(0);
+}
+
+#chkBurger {
+  display: none;
 }
 
 .blocflex {
@@ -526,6 +570,42 @@ hr {
   flex-wrap: nowrap;
   align-items: center;
   height: 3rem;
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  flex: 1 0 40px;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 11px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
 }
 
 /* --------------------------------------------- layout */

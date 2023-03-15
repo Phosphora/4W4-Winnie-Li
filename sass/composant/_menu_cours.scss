@@ -1,0 +1,41 @@
+.menu-cours-container {
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: $largeur__bureau) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .menu-item {
+            flex: 1 0 40px;
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 11px;
+
+                @media screen and (min-width: $largeur__bureau) {
+                    justify-content: flex-start;
+                    flex-wrap: nowrap;
+                }
+
+                code {}
+
+                p {
+                    display: none;
+
+                    @media screen and (min-width: $largeur__bureau) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
