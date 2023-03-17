@@ -4,8 +4,10 @@
  * qui s'intègre dans la liste des cours qu'accède avec category/cours.
  */
 $titre = get_the_title();
-// retirer le premier du titre d'article de catégorie note-de-cours-4w4
-// if (substr($titre,0,1) == '0') {}...
+// Retirer le premier du titre d'article de catégorie note-de-cours-4w4
+if (substr($titre, 0, 1) == '0') {
+    $titre = substr($titre, 1);
+}
 ?>
 
 <article class="blocflex__article">

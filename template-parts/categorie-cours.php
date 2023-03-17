@@ -5,7 +5,9 @@
  */
 $titre = get_the_title();
 $sigle = substr($titre, 0, 7);
-$titre_long = substr($titre, 7, -5);
+$choseTrouvee = '(';
+$position = strpos(substr($titre, 7), $choseTrouvee);
+$titre_long = substr($titre, 7, $position);
 $duree = "90";
 ?>
 

@@ -17,25 +17,12 @@ ol {
 }
 
 ul {
-    background-color: mistyrose;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 ul li,
 ol li {
     margin: 0.5rem 0rem;
-}
-
-ul li::before {
-    content: "-";
-    background: lightgray;
-    border-radius: 0.3rem;
-    padding-inline: 0.3rem;
-    margin-inline-end: 0.3rem;
-}
-
-ul li li::before {
-    background: transparent;
 }
 
 /*
@@ -51,7 +38,7 @@ pre {
 }
 
 code {
-    color: #a4e1eb;
+    color: fuchsia;
 }
 
 strong {
@@ -64,5 +51,3 @@ hr {
     color: black;
     background-color: black;
 }
-
-blockquote {}

@@ -1,0 +1,107 @@
+.site__footer {
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0;
+    }
+
+    .conteneur-liens {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        section:nth-of-type(1) {
+            flex: 0 2 40%;
+        }
+    }
+
+    h6 {
+        color: #574B5e;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px;
+    }
+
+    a {
+        color: #737373;
+    }
+
+    a:active,
+    a:focus,
+    a:hover {
+        color: #3366cc;
+        text-decoration: none;
+    }
+
+    .footer-liens {
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            display: block;
+        }
+    }
+    
+    .icones-sociaux {
+        text-align: right;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            margin-bottom: 4px;
+
+            a {
+                background-color: #eceeef;
+                color: #818a91;
+                font-size: 16px;
+                display: inline-block;
+                line-height: 44px;
+                width: 44px;
+                height: 44px;
+                text-align: center;
+                margin-right: 8px;
+                border-radius: 100%;
+                -webkit-transition: all .2s linear;
+                -o-transition: all .2s linear;
+                transition: all .2s linear;
+            }
+            
+            a:active,
+            a:focus,
+            a:hover {
+                color: #fff;
+            }
+
+            a.facebook:hover {
+                background-color: #3b5998;
+            }
+
+            a.twitter:hover {
+                background-color: #00aced;
+            }
+
+            a.linkedin:hover {
+                background-color: #007bb6;
+            }
+            
+            a.dribbble:hover {
+                background-color: #ea4c89;
+            }
+        }
+    }
+    
+    .copyright-texte {
+        margin: 0;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+}

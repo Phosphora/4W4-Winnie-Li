@@ -8,7 +8,6 @@
 <?php get_header(); ?>
     <main class="site__main">
     <pre>category.php</pre>
-    <h1>Bienvenue sur 4W4!</h1>
     <section class="blocflex">
       <?php
       $category = get_queried_object();

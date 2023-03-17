@@ -8,10 +8,14 @@ wp_enqueue_style('4w4-principal', // Identificateur
         get_template_directory_uri() . '/style.css', // L'adresse url de style.css
         array(), // Définir les dépendances
         filemtime(get_template_directory() . '/style.css'), // Le calcul de la version du fichier css
-        'all'); // Media
+        'all'); // Média
 
         wp_enqueue_style("google_fonts",
-            "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap",
+            "https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Nunito&family=Ubuntu&display=swap",
+            false);
+
+        wp_enqueue_style("font_awesome",
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
             false);
 }
 
