@@ -12,6 +12,14 @@
     grid-area: main;
     overflow: hidden;
     background-color: lavenderblush;
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }
 
 .site__footer {

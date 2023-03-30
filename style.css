@@ -687,6 +687,12 @@ hr {
   overflow: hidden;
   background-color: lavenderblush;
 }
+.site__main h1, .site__main h2 {
+  text-align: center;
+}
+.site__main h2 {
+  font-size: 24px;
+}
 
 .site__footer {
   grid-area: footer;
