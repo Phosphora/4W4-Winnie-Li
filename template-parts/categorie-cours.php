@@ -8,7 +8,7 @@ $sigle = substr($titre, 0, 7);
 $choseTrouvee = '(';
 $position = strpos(substr($titre, 7), $choseTrouvee);
 $titre_long = substr($titre, 7, $position);
-$duree = "90";
+$duree = substr($titre, strpos($titre, '('));
 ?>
 
 <article class="blocflex__article">

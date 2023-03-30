@@ -74,6 +74,12 @@ function perso_menu_item_title($title, $item, $args, $depth) {
         $title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 2, ' ... ') . "</p>" ;
     }
 
+    if ($args -> menu == 'note-de-cours-4w4') {
+        if (substr($title, 0, 1) == '0') {
+            $title = substr($title, 1);
+        }
+    }
+
     return $title;
 }
 
