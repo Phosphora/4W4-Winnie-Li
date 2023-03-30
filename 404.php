@@ -12,6 +12,20 @@
         <div class="erreur__recherche">
             <?= get_search_form() ?>
         </div>
+        <h3>Nos choix de cours</h3>
+        <?php
+            $menu = "cours";
+            wp_nav_menu( array(
+                "menu" => $menu,
+                "container" => "nav"
+            ) ); ?>
+        <h3>Les notes de cours</h3>
+        <?php
+            $menu = "note-de-cours-4w4";
+            wp_nav_menu( array(
+                "menu" => $menu,
+                "container" => "nav"
+            ) ); ?>
     </main>
     <?php get_footer(); ?>
 </body>

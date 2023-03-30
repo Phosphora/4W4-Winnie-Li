@@ -1,5 +1,4 @@
-.menu-cours-container {
-
+.menu-note-de-cours-4w4-container {
     .menu {
         display: flex;
         flex-wrap: wrap;
@@ -21,18 +20,6 @@
                 @media screen and (min-width: $largeur__bureau) {
                     justify-content: flex-start;
                     flex-wrap: nowrap;
-                }
-
-                code {
-                    padding-right: 11px;
-                }
-
-                p {
-                    display: none;
-
-                    @media screen and (min-width: $largeur__bureau) {
-                        display: block;
-                    }
                 }
             }
         }

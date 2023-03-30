@@ -559,12 +559,10 @@ hr {
 
 .menu-cours-container .menu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu {
-    flex-direction: column;
     justify-content: flex-start;
   }
 }
@@ -583,6 +581,9 @@ hr {
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
+}
+.menu-cours-container .menu .menu-item a code {
+  padding-right: 11px;
 }
 .menu-cours-container .menu .menu-item a p {
   display: none;
@@ -686,6 +687,32 @@ hr {
   }
 }
 
+.menu-note-de-cours-4w4-container .menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-de-cours-4w4-container .menu {
+    justify-content: flex-start;
+  }
+}
+.menu-note-de-cours-4w4-container .menu .menu-item {
+  flex: 1 0 40px;
+}
+.menu-note-de-cours-4w4-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 11px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-de-cours-4w4-container .menu .menu-item a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
 /* --------------------------------------------- layout */
 /**
  * Mise en page générale avec display: grid
@@ -701,11 +728,14 @@ hr {
   overflow: hidden;
   background-color: lavenderblush;
 }
-.site__main h1, .site__main h2 {
+.site__main h1, .site__main h2, .site__main h3 {
   text-align: center;
 }
 .site__main h2 {
   font-size: 24px;
+}
+.site__main h3 {
+  padding-top: 33px;
 }
 
 .site__footer {
