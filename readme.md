@@ -1,9 +1,9 @@
-# Travail Pratique #1
+# Examen Intra
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
 #### Objectifs
-- Continuer de faire progresser le thème
+- Adapter le modèle 404.php pour reproduire la maquette incluse avec le devis du examen
 - Déployer le projet sur le serveur **_Siteground_**
 
 #### Liens de référence
