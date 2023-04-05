@@ -1,13 +1,14 @@
-# Examen Intra
+# Laboratoire #4
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
 #### Objectifs
-- Adapter le modèle 404.php pour reproduire la maquette incluse avec le devis du examen
-- Déployer le projet sur le serveur **_Siteground_**
+- Ajoutez des champs personnalisés à mon thème
+- Utiliser l'extension ACF
+- Déployer le projet sur le serveur Web distant **_Siteground_**
 
 #### Liens de référence
-- Site sur le serveur Web distant **Siteground**
+- Site sur le serveur Web distant **_Siteground_**
     - https://cidweb34.sg-host.com/
 - https://fr.wordpress.org/
 - Pour visualiser sur VC installer, « Markdown preview »

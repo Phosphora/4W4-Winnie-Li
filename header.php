@@ -7,7 +7,7 @@
     <title>Mon 4W4</title>
     <?php wp_head(); ?>
 </head>
-<body class="site <?php echo(is_front_page() ? "no-aside" : "") ?>">
+<body class="custom-background site <?php echo(is_front_page() ? "no-aside" : "") ?>">
     <header class="site__entete">
         <section class="entete__nav">
         <?php the_custom_logo(); ?>

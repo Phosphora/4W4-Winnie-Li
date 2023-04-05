@@ -458,7 +458,7 @@ hr {
 
 /* menu__entete */
 .menu__entete {
-  background-color: #B16FDE;
+  background-color: #819BC2;
   border-radius: 25px;
   /*
   position: absolute;
@@ -478,7 +478,7 @@ hr {
   flex-direction: column;
   align-items: flex-end;
   list-style-type: none;
-  background-color: mistyrose;
+  background-color: #C3D8F7;
 }
 @media screen and (min-width: 800px) {
   .menu__entete .menu {
@@ -541,6 +541,7 @@ hr {
   flex-wrap: nowrap;
   align-items: center;
   height: 3rem;
+  padding-left: 35px;
 }
 
 .erreur__recherche {
@@ -720,13 +721,12 @@ hr {
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: #D1B6E3;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
-  background-color: lavenderblush;
+  background-color: mistyrose;
 }
 .site__main h1, .site__main h2, .site__main h3 {
   text-align: center;
@@ -736,6 +736,10 @@ hr {
 }
 .site__main h3 {
   padding-top: 33px;
+}
+
+main {
+  background-color: lavenderblush;
 }
 
 .site__footer {
@@ -748,15 +752,14 @@ hr {
 
 .site__aside {
   grid-area: aside;
-  background-color: mistyrose;
+  background-color: #C3D8F7;
   text-align: center;
 }
 .site__aside ul {
-  background-color: #B16FDE;
+  background-color: #819BC2;
   text-align: left;
 }
 .site__aside ul a {
-  color: lavender;
   text-decoration: none;
 }
 
@@ -764,7 +767,6 @@ hr {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  background-color: lightpink;
 }
 @media screen and (min-width: 1000px) {
   .site {

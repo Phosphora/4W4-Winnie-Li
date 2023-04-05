@@ -5,13 +5,12 @@
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: #D1B6E3;
 }
 
 .site__main {
     grid-area: main;
     overflow: hidden;
-    background-color: lavenderblush;
+    background-color: mistyrose;
 
     h1, h2, h3 {
         text-align: center;
@@ -26,6 +25,10 @@
     }
 }
 
+main {
+    background-color: lavenderblush;
+}
+
 .site__footer {
     grid-area: footer;
     background-color: lavender;
@@ -37,15 +40,14 @@
 .site__aside {
     grid-area: aside;
     // padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: mistyrose;
+    background-color: #C3D8F7;
     text-align: center;
 
     ul {
-        background-color: #B16FDE;
+        background-color: #819BC2;
         text-align: left;
 
         a {
-            color: lavender;
             text-decoration: none;
         }
     }
@@ -60,7 +62,6 @@
       "main"
       "footer";
     // row-gap: 50px;
-    background-color: lightpink;
 
     @media screen and (min-width: $largeur__bureau) {
         grid-template-columns: 20% auto;
