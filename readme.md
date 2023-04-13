@@ -3,8 +3,11 @@
 ### Auteure : Winnie Li
 
 #### Objectifs
-- Ajoutez des champs personnalisés à mon thème
-- Utiliser l'extension ACF
+- Ajouter quelques champs personnalisés pour la page d'accueil
+- Utiliser des types de champs qu'on n'a pas encore utilisé
+- Débuter le carrousel
+- Afficher le conteneur du carrousel avec une animation
+- Afficher les images de la galerie dans le carrousel
 - Déployer le projet sur le serveur Web distant **_Siteground_**
 
 #### Liens de référence
