@@ -439,7 +439,7 @@ hr {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
 }
 .site__titre a {
-  color: #4B2F5E;
+  color: #CFF0FF;
   text-decoration: none;
 }
 
@@ -458,7 +458,7 @@ hr {
 
 /* menu__entete */
 .menu__entete {
-  background-color: #819BC2;
+  background-color: #BCCFE8;
   border-radius: 25px;
   /*
   position: absolute;
@@ -478,7 +478,7 @@ hr {
   flex-direction: column;
   align-items: flex-end;
   list-style-type: none;
-  background-color: #C3D8F7;
+  background-color: #DBE1FF;
 }
 @media screen and (min-width: 800px) {
   .menu__entete .menu {
@@ -726,7 +726,7 @@ hr {
 .site__main {
   grid-area: main;
   overflow: hidden;
-  background-color: mistyrose;
+  background-color: #C0BCE8;
 }
 .site__main h1, .site__main h2, .site__main h3 {
   text-align: center;
@@ -739,12 +739,12 @@ hr {
 }
 
 main {
-  background-color: lavenderblush;
+  background-color: lavender;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: lavender;
+  background-color: #E1CFFF;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -752,11 +752,11 @@ main {
 
 .site__aside {
   grid-area: aside;
-  background-color: #C3D8F7;
+  background-color: #DBE1FF;
   text-align: center;
 }
 .site__aside ul {
-  background-color: #819BC2;
+  background-color: #BCCFE8;
   text-align: left;
 }
 .site__aside ul a {

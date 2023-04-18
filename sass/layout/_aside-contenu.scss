@@ -10,7 +10,7 @@
 .site__main {
     grid-area: main;
     overflow: hidden;
-    background-color: mistyrose;
+    background-color: #C0BCE8;
 
     h1, h2, h3 {
         text-align: center;
@@ -26,12 +26,12 @@
 }
 
 main {
-    background-color: lavenderblush;
+    background-color: lavender;
 }
 
 .site__footer {
     grid-area: footer;
-    background-color: lavender;
+    background-color: #E1CFFF;
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
@@ -40,11 +40,11 @@ main {
 .site__aside {
     grid-area: aside;
     // padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: #C3D8F7;
+    background-color: #DBE1FF;
     text-align: center;
 
     ul {
-        background-color: #819BC2;
+        background-color: #BCCFE8;
         text-align: left;
 
         a {

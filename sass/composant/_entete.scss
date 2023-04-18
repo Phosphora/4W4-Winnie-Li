@@ -8,7 +8,7 @@
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
 
     a {
-        color: #4B2F5E;
+        color: #CFF0FF;
         text-decoration: none;
     }
 }
@@ -27,7 +27,7 @@
 
 /* menu__entete */
 .menu__entete { // nav
-    background-color: #819BC2;
+    background-color: #BCCFE8;
     border-radius: 25px;
     /*
     position: absolute;
@@ -47,7 +47,7 @@
             flex-direction: column;
             align-items: flex-end;
             list-style-type: none;
-            background-color: #C3D8F7;
+            background-color: #DBE1FF;
 
             @media screen and (min-width: $largeur__tablette) {
                 flex-direction: row;
