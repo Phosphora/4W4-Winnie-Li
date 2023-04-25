@@ -84,3 +84,18 @@ function perso_menu_item_title($title, $item, $args, $depth) {
 }
 
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 4);
+
+/* Enregistrement des widgets */
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Sidebar', 'nom-de-mon-theme' ),
+        'id' => 'sidebar',
+        'description' => __( 'Un widget area pour afficher des widgets dans la sidebar.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
