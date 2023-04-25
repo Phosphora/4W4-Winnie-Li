@@ -523,6 +523,7 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 75vh;
 }
 
 .blocflex__article {
@@ -712,6 +713,21 @@ hr {
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
+}
+
+.menu-evenement-container {
+  background-color: transparent;
+}
+.menu-evenement-container .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #555;
+  height: 100px;
+  margin: 10px;
 }
 
 /* --------------------------------------------- layout */

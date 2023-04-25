@@ -1,13 +1,11 @@
-# Laboratoire #4
+# Laboratoire #5
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
 #### Objectifs
-- Ajouter quelques champs personnalisés pour la page d'accueil
-- Utiliser des types de champs qu'on n'a pas encore utilisé
-- Débuter le carrousel
-- Afficher le conteneur du carrousel avec une animation
-- Afficher les images de la galerie dans le carrousel
+- Créer des sidebars de widget (Inscription dans le fichier functions.php)
+- Intégrer 3 widgets dans le footer
+- Créer un footer de deux lignes
 - Déployer le projet sur le serveur Web distant **_Siteground_**
 
 #### Liens de référence
