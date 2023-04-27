@@ -11,6 +11,16 @@ if (substr($titre, 0, 1) == '0') {
 ?>
 
 <article class="blocflex__article">
+    <figure class="blocflex__figure">
+        <?php
+        if (has_post_thumbnail()) {
+            the_post_thumbnail( 'thumbnail' );
+        } else {
+            get_the_post_thumbnail(1, 'thumbnail' );
+        }
+        ?>
+    </figure>
+    <?php get_post_thumbnail_id(); ?>
     <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
 </article>

@@ -1,11 +1,17 @@
-# Laboratoire #5
+# Travail Pratique #2
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteure : Winnie Li
 
 #### Objectifs
-- Créer des sidebars de widget (Inscription dans le fichier functions.php)
-- Intégrer 3 widgets dans le footer
-- Créer un footer de deux lignes
+- Améliorer la page d'accueil interactive en utilisant le modèle « front-page.php »
+- Dynamiser la structure du menu mobile actuel
+- Améliorer la structure du sidebar
+- Améliorer l'apparence du footer
+- Améliorer le modèle categorie-cours pour synthétiser l'offre de cours
+- Créer quelques modèles et templates
+- Continuer à faire progresser le thème
+- Améliorer l'extension « carrousel »
+- Utiliser les images « **mise-en-avant** » et la fonction « **the_posts_thumbnail()** »
 - Déployer le projet sur le serveur Web distant **_Siteground_**
 
 #### Liens de référence

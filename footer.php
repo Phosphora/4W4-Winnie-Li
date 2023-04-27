@@ -38,6 +38,7 @@
 
 <hr>
 
+<div class="conteneur-sidebar">
 <section class="footer__col">
     <div class="sidebar">
         <?php dynamic_sidebar( 'footer_1' ); ?>
@@ -50,11 +51,12 @@
     </div>
 </section>
 
-<section>
+<section class="footer__col">
     <div class="sidebar">
         <?php dynamic_sidebar( 'footer_3' ); ?>
     </div>
 </section>
+</div>
 
 <div class="conteneur-icones">
     <section>

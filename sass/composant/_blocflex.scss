@@ -2,14 +2,30 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 75vh;
+    min-height: 25vh;
 }
 
 .blocflex__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     flex: 1 0 250px;
     padding: 5px;
     margin: 10px;
-    border: 1px solid #aaa;
+    border: 2px solid #aaa;
+}
+
+.blocflex_figure {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+        display: block;
+        width: 150px;
+    }
 }
 
 .blocflex__galerie {

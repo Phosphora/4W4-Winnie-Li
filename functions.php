@@ -37,6 +37,7 @@ add_theme_support( 'custom-logo', array(
     'width'  => 150,
 ) );
 add_theme_support( 'custom-background' );
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
@@ -59,7 +60,7 @@ function cidweb_modifie_requete_principal( $query ) {
 add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
 /**
-* Permet de personaliser chacun des titres du m
+* Permet de personaliser chacun des titres du menu
 * @param $title : titre du menu à modifier
 *        $item : la structure « li » du menu
 *        $args : objet décrivant l'ensemble des menus de notre site
