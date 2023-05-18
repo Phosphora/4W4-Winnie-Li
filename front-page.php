@@ -6,14 +6,26 @@
 
 <?php get_header(); ?>
     <main class="site__main">
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'entete_1' ); ?>
+        </div>
         <pre>front-page.php</pre>
         <h1>Bienvenue sur 4W4!</h1>
-        <h2>Les événements à venir</h2>
-        <section class="blocflex">
-        <?php wp_nav_menu( array(
+        <h2>Événements à venir</h2>
+        <section class="bloc__viewport">
+        <?php
+            wp_nav_menu( array(
             "menu" => "evenement",
             "container" => "nav"
-        )) ?>
+            ));
+        ?>
+        <h2>Menus à explorer</h2>
+        <?php
+            wp_nav_menu( array(
+            "menu" => "bloc-archive",
+            "container" => "nav"
+            ));
+        ?>
         </section>
         <section class="blocflex">
         <?php

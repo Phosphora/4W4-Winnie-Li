@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 25vh;
 }
 
 .blocflex__article {
@@ -14,13 +13,13 @@
     flex: 1 0 250px;
     padding: 5px;
     margin: 10px;
-    border: 2px solid #aaa;
+    border: 2px solid black;
 }
 
-.blocflex_figure {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.blocflex__figure {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
 
     img {
         display: block;
@@ -29,5 +28,5 @@
 }
 
 .blocflex__galerie {
-    flex: 1 0 100%;
+   flex: 1 0 100%;
 }

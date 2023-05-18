@@ -62,14 +62,14 @@ add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
 /**
 * Permet de personaliser chacun des titres du menu
-* @param $title : titre du menu à modifier
-*        $item : la structure « li » du menu
-*        $args : objet décrivant l'ensemble des menus de notre site
+* @param $title : Titre du menu à modifier
+*        $item : La structure « li » du menu
+*        $args : Objet décrivant l'ensemble des menus de notre site
 *        $depth : Niveau de profondeur du menu (On l'a retiré ici.)
 */
 function perso_menu_item_title($title, $item, $args, $depth) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
-    if ($args -> menu == 'cours') {
+    if ($args -> menu == 'cours') { // On filtre uniquement le menu « cours ».
         // Modifier la longueur du titre en fonction de nos besoins
         $sigle = substr($title, 4, 3);
         $title = substr($title, 7);
@@ -88,11 +88,11 @@ function perso_menu_item_title($title, $item, $args, $depth) {
 add_filter( 'nav_menu_item_title', 'perso_menu_item_title', 10, 4 );
 
 /**
- * Ajouter la description et l'image mise en avant à chacun
+ * Ajouter la description et l'image mise en avant à chacun des choix du menu « evenement »
  */
 
 function add_menu_description_and_thumbnail($item_output, $item, $depth, $args) {
-    if ('evenement' == $args -> menu) {
+    if ('evenement' == $args -> menu || 'bloc-archive' == $args -> menu) {
         $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
         if ( $post_thumbnail_id ) {
             $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );
@@ -134,6 +134,16 @@ function enregistrer_sidebar() {
         'name' => __( 'Footer 3', 'nom-de-mon-theme' ),
         'id' => 'footer_3',
         'description' => __( 'Une zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Entete 1', 'nom-de-mon-theme' ),
+        'id' => 'entete_1',
+        'description' => __( 'Une zone de widget pour afficher des widgets dans la page accueil.', 'nom-de-mon-theme' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',

@@ -523,7 +523,6 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 25vh;
 }
 
 .blocflex__article {
@@ -535,15 +534,15 @@ hr {
   flex: 1 0 250px;
   padding: 5px;
   margin: 10px;
-  border: 2px solid #aaa;
+  border: 2px solid black;
 }
 
-.blocflex_figure {
+.blocflex__figure {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.blocflex_figure img {
+.blocflex__figure img {
   display: block;
   width: 150px;
 }
@@ -730,38 +729,60 @@ hr {
   }
 }
 
-.menu-evenement-container {
+.menu-evenement-container,
+.menu-bloc-archive-container {
   background-color: transparent;
 }
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-bloc-archive-container .menu {
   display: flex;
   justify-content: space-between;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-bloc-archive-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   border: 2px solid #555;
-  flex: 1 0 40px;
+  flex: 1 0 200px;
   height: auto;
   margin: 10px;
 }
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-bloc-archive-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-.menu-evenement-container .menu .menu-item a .title {
+.menu-evenement-container .menu .menu-item a .title,
+.menu-bloc-archive-container .menu .menu-item a .title {
   font-size: 1.5rem;
 }
-.menu-evenement-container .menu .menu-item a .description {
+.menu-evenement-container .menu .menu-item a .description,
+.menu-bloc-archive-container .menu .menu-item a .description {
   font-size: 0.8rem;
 }
-.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+.menu-evenement-container .menu .menu-item a .menu-thumbnail,
+.menu-bloc-archive-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 150px;
+}
+
+.img__archive {
+  width: 80%;
+  height: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.archive__cours .img__archive {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.archive__4w4 .img__archive {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=briefcase");
 }
 
 .article__single h3 {
@@ -770,6 +791,10 @@ hr {
 }
 .article__single h3 img {
   margin: 5px;
+}
+
+.bloc__viewport {
+  min-height: 33vh;
 }
 
 /* --------------------------------------------- layout */
