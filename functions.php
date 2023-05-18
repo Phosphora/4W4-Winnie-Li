@@ -28,6 +28,7 @@ function enregistre_menus() {
 	'menu_sidebar'  => 'Menu sidebar',
 	) );
 }
+
 add_action( 'after_setup_theme', 'enregistre_menus', 0 );
 
 /* add_theme_support */
@@ -84,7 +85,7 @@ function perso_menu_item_title($title, $item, $args, $depth) {
     return $title;
 }
 
-add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 4);
+add_filter( 'nav_menu_item_title', 'perso_menu_item_title', 10, 4 );
 
 /**
  * Ajouter la description et l'image mise en avant à chacun
@@ -100,10 +101,11 @@ function add_menu_description_and_thumbnail($item_output, $item, $depth, $args) 
             $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span>', $item_output );
         }
     }
+
     return $item_output;
 }
 
-add_filter('walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 10, 4);
+add_filter( 'walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 10, 4 );
 
 /* Enregistrement des widgets */
 // Enregistrer le sidebar

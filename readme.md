@@ -21,3 +21,5 @@
 - Pour visualiser sur VC installer, « Markdown preview »
 - Pour activer, `ctrl-shift-v`
 - https://developer.wordpress.org/themes/basics/
+- Lien vers le dépôt de ma version de l'extension Carrousel
+    - https://github.com/Phosphora/4W4-Carrousel

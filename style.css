@@ -749,6 +749,8 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 .menu-evenement-container .menu .menu-item a .title {
   font-size: 1.5rem;
