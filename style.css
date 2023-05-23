@@ -730,16 +730,19 @@ hr {
 }
 
 .menu-evenement-container,
-.menu-bloc-archive-container {
+.menu-bloc-archive-container,
+.menu-atelier-container {
   background-color: transparent;
 }
 .menu-evenement-container .menu,
-.menu-bloc-archive-container .menu {
+.menu-bloc-archive-container .menu,
+.menu-atelier-container .menu {
   display: flex;
   justify-content: space-between;
 }
 .menu-evenement-container .menu .menu-item,
-.menu-bloc-archive-container .menu .menu-item {
+.menu-bloc-archive-container .menu .menu-item,
+.menu-atelier-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   border: 2px solid #555;
@@ -748,7 +751,8 @@ hr {
   margin: 10px;
 }
 .menu-evenement-container .menu .menu-item a,
-.menu-bloc-archive-container .menu .menu-item a {
+.menu-bloc-archive-container .menu .menu-item a,
+.menu-atelier-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -756,18 +760,22 @@ hr {
   text-align: center;
 }
 .menu-evenement-container .menu .menu-item a .title,
-.menu-bloc-archive-container .menu .menu-item a .title {
+.menu-bloc-archive-container .menu .menu-item a .title,
+.menu-atelier-container .menu .menu-item a .title {
   font-size: 1.5rem;
 }
 .menu-evenement-container .menu .menu-item a .description,
-.menu-bloc-archive-container .menu .menu-item a .description {
+.menu-bloc-archive-container .menu .menu-item a .description,
+.menu-atelier-container .menu .menu-item a .description {
   font-size: 0.8rem;
 }
 .menu-evenement-container .menu .menu-item a .menu-thumbnail,
-.menu-bloc-archive-container .menu .menu-item a .menu-thumbnail {
+.menu-bloc-archive-container .menu .menu-item a .menu-thumbnail,
+.menu-atelier-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 150px;
+  padding: 15px;
 }
 
 .img__archive {

@@ -1,5 +1,6 @@
 .menu-evenement-container, 
-.menu-bloc-archive-container { // nav
+.menu-bloc-archive-container,
+.menu-atelier-container { // nav
     background-color: transparent;
 
     .menu { // ul
@@ -33,6 +34,7 @@
                     display: block;
                     width: 150px;
                     height: 150px;
+                    padding: 15px;
                 }
             }
         }

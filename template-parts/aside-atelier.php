@@ -1,6 +1,6 @@
 <?php
 /**
- * « template part » gabarit categorie-atelier permet d'afficher un article «bloc»
+ * « template part » gabarit aside-atelier permet d'afficher un article «bloc»
  * qui contient la liste des ateliers de perfectionnement
  */
 ?>
