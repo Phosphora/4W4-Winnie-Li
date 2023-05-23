@@ -11,8 +11,8 @@
         </div>
         <pre>front-page.php</pre>
         <h1>Bienvenue sur 4W4!</h1>
-        <h2>Événements à venir</h2>
         <section class="bloc__viewport">
+        <h2>Événements à venir</h2>
         <?php
             wp_nav_menu( array(
             "menu" => "evenement",
@@ -23,6 +23,13 @@
         <?php
             wp_nav_menu( array(
             "menu" => "bloc-archive",
+            "container" => "nav"
+            ));
+        ?>
+        <h2>Ateliers de perfectionnement à faire</h2>
+        <?php
+            wp_nav_menu( array(
+            "menu" => "atelier",
             "container" => "nav"
             ));
         ?>
