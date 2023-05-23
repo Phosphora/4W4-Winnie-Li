@@ -1,6 +1,6 @@
 <?php
 /**
- * «template part» gabarit categorie-note-de-cours-4w4 permet d'afficher un article «bloc»
+ * « template part » gabarit categorie-note-de-cours-4w4 permet d'afficher un article «bloc»
  * qui s'intègre dans la liste des cours qu'accède avec category/cours.
  */
 $titre = get_the_title();
