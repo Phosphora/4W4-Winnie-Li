@@ -15,7 +15,7 @@ if ( have_posts() ) : the_post(); ?>
 <p>Heure : <?php the_field('heure'); ?></p>
 <p>Durée : <?php the_field('duree'); ?></p>
 <p>Local : <?php the_field('local'); ?></p>
-<p>Formateur : <?php the_field('date_et_heure'); ?></p>
+<p>Formateur : <?php the_field('formateur'); ?></p>
 <?php endif;?>
 </main><!-- #main -->
 <?php
